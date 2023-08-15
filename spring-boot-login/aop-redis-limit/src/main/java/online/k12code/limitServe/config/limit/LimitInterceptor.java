@@ -60,7 +60,7 @@ public class LimitInterceptor {
             Number count = redisTemplate.execute(limitScript, keys, limitCount, limitPeriod);
             assert count != null;
             log.info("限制请求{}, 当前请求{},缓存key{}", limitCount, count.intValue(), key);
-            //如果缓存里没有值，或者他的值小于限制频率
+            //如果请求的次数大于限制频率
             if (count.intValue() > limitCount) {
                 throw new Exception("限制请求");
             }
