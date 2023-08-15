@@ -1,8 +1,10 @@
 package online.k12code.limitServe;
 
+import online.k12code.EnableSwaggerDoc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@EnableSwaggerDoc
 @SpringBootApplication
 public class AopRedisLimitApplication {
 
