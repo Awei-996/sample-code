@@ -28,9 +28,10 @@ public class Producer {
         // 启动
         producer.start();
         // 创建消息 (主题,消息)
-        Message testTopic = new Message("testTopic", "一条新消息".getBytes());
+        Message testTopic = new Message("testTopic", "一条新消息24823".getBytes());
         // 发送结果
         SendResult sendResult = producer.send(testTopic);
+        System.err.println("sendResult,"+sendResult);
         // 关闭
         producer.shutdown();
 
