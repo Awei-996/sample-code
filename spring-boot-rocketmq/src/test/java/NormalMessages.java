@@ -2,13 +2,10 @@ import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import org.apache.rocketmq.client.exception.MQBrokerException;
-import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.exception.RemotingException;
 import org.junit.Test;
 
 import java.util.List;
@@ -17,7 +14,7 @@ import java.util.List;
  * @author Carl
  * @date 2023/8/17
  **/
-public class Producer {
+public class NormalMessages {
 
     @Test
     public void p1() throws Exception {
@@ -64,5 +61,6 @@ public class Producer {
         //TimeUnit.SECONDS.sleep(100);
         //挂起当前jvm
         System.in.read();
+
     }
 }
