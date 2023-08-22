@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: rocketmq-producer
+server:
+  port: 1202
+  servlet:
+    context-path: /rocketmq-producer
+rocketmq:
+  name-server: k12code.online:9876
+  producer:
+    group: test-boot-producer-group
+

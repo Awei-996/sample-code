@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: rocketmq-consumer
+server:
+  port: 1201
+rocketmq:
+  name-server: k12code.online:9876
+
