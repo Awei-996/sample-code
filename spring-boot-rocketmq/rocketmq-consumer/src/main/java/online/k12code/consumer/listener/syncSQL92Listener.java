@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @RocketMQMessageListener(
         topic = "syncSQL92-topic",
         consumerGroup = "syncSQL92-consumer",
-        selectorType = SelectorType.SQL92, // 消息过滤类型
+        selectorType = SelectorType.SQL92, // 消息过滤类型 需要在broker.conf中添加 enablePropertyFilter=true,
         selectorExpression = "a > 3" // 消息过滤
 )
 public class syncSQL92Listener implements RocketMQListener<MessageExt> {
