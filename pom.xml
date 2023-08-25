@@ -21,6 +21,7 @@
         <module>spring-boot-login</module>
         <module>swagger</module>
         <module>spring-boot-rocketmq</module>
+        <module>spring-boot-flashKilling</module>
     </modules>
 
 

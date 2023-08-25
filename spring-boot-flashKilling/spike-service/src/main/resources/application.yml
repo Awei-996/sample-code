@@ -1,0 +1,27 @@
+server:
+  port: 1302
+spring:
+  application:
+    name: spike-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://k12code.online:3306/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 333333
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: k12code.online
+    port: 6379
+    database: 0
+    lettuce:
+      pool:
+        enabled: true
+        max-active: 100
+        max-idle: 20
+        min-idle: 5
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/*.xml
+rocketmq:
+  name-server: k12code.online:9876

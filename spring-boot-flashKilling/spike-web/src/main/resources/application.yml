@@ -1,0 +1,23 @@
+server:
+  port: 1301
+spring:
+  application:
+    name: spike-web
+  redis:
+    host: k12code.online
+    port: 6379
+    database: 0
+    password: lilishop
+    lettuce:
+      pool:
+        enabled: true
+        max-active: 100
+        max-idle: 20
+        min-idle: 5
+rocketmq:
+  name-server: k12code.online:9876     # rocketMq?nameServer??
+  producer:
+    group: powernode-group        # ?????
+    send-message-timeout: 3000  # ?????????
+    retry-times-when-send-async-failed: 2  # ????????????
+    max-message-size: 4194304
