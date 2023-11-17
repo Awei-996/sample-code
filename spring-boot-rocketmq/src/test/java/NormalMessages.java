@@ -21,7 +21,7 @@ public class NormalMessages {
         // 创建一个生产者 （制定一个组名）
         DefaultMQProducer producer = new DefaultMQProducer("test-producer-group");
         // 连接namesrv
-        producer.setNamesrvAddr("47.95.115.74:9876");
+        producer.setNamesrvAddr("123.249.70.145:9876");
         // 启动
         producer.start();
         // 创建消息 (主题,消息)

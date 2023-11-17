@@ -9,7 +9,7 @@ server:
       max: 1000
   # Redis
   redis:
-    host: 192.168.206.128
+    host: k12code.online
     port: 6379
     password: lilishop
     lettuce:
@@ -22,7 +22,12 @@ server:
         max-idle: 10
         # ??????????? ?? 8
         min-idle: 8
-
+spring:
+  task:
+    execution:
+      pool:
+        max-threads: 10
+        core-threads: 5
 lili:
   cache:
     timeout: 1500

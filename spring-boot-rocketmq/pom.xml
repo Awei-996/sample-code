@@ -36,6 +36,18 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>com.alibaba.otter</groupId>
+            <artifactId>canal.client</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+        <!-- Message、CanalEntry.Entry等来自此安装包 -->
+        <dependency>
+            <groupId>com.alibaba.otter</groupId>
+            <artifactId>canal.protocol</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+
+        <dependency>
             <groupId>online.k12code</groupId>
             <artifactId>swagger</artifactId>
             <version>1.0-SNAPSHOT</version>
